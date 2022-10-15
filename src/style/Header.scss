@@ -1,0 +1,130 @@
+.Header {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .upper-header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            img {
+                width: 4rem;
+            }
+        }
+        
+
+        .icons-links {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .icons-link {
+                color: black;
+                font-weight: 500;
+                margin: 0 1rem;
+            }
+        }
+    }
+    .searchbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .searchbar-wrapper {
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            border: 1px solid #DD4B39;
+            padding-right: 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .searchbtn {
+                padding: 0.8rem;
+                background-color: #DD4B39;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+    }
+    .lower-header{
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .navbar-links {
+                color: black;
+                font-weight: 500;
+                margin: 0 2rem;
+                
+            }
+        }
+    }
+    .Header-Department{
+        
+        width: 100%;
+        ul{
+            padding: 1rem 0;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        a{
+            color: #DD4B39;
+        }
+           li{
+            width: 15rem;
+            padding: 0.8rem;
+            background-color: rgb(247, 247, 247);
+            margin: 0.2rem;
+            font-size: 14px;
+           
+           }
+        }
+        .marchandise{
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .Heading{
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: #DD4B39 ;
+            }
+            .marchandise-image-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                .marchandise-image{
+                    width: 9rem;
+                    margin: 1rem;
+                    @media only screen and (min-width: 600px) and (max-width: 900px){
+                        width: 4rem;
+                        margin: 0.3rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}
